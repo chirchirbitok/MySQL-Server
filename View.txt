@@ -1,0 +1,11 @@
+CREATE VIEW V_EmployeeSalary 
+as 
+SELECT * FROM EmployeeSalary
+	WHERE JobTitle <> 'Salesman'
+
+
+//VIEW THE CREATED VIEW
+SELECT * FROM FirstDB.dbo.V_EmployeeSalary 
+
+//MORE INFO ABOUT THE VIEW
+SELECT * FROM INFORMATION_SCHEMA.VIEWS

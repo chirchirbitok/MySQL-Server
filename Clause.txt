@@ -1,0 +1,6 @@
+SELECT JobTitle, AVG(Salary) FROM EmployeeDemographics
+JOIN
+EmployeeSalary ON EmployeeDemographics.EmployeeId = EmployeeSalary.EmployeeId
+GROUP BY JobTitle
+HAVING AVG(Salary) > 45000
+ORDER BY AVG(Salary)
